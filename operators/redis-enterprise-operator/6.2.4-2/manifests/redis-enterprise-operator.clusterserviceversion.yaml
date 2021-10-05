@@ -469,13 +469,10 @@ spec:
     * A kubernetes version of 1.9 or higher
 
     #### Recommendations/known issues
-
     Changing the name of the Redis Enterprise Cluster in the spec from the
     default requires running a command to grant permissions to the pods:
 
-
     > *oc adm policy add-scc-to-group redis-enterprise-scc
     system:serviceaccounts:my-project*
-
 
     Replace my-project with the actual name of the project/namespace.
